@@ -9,12 +9,20 @@
         android:id="@+id/welcomeFragment"
         android:name="at.ht.feedback.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_questionFragment2"
+            app:destination="@id/questionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/questionFragment"
         android:name="at.ht.feedback.QuestionFragment"
         android:label="fragment_question"
-        tools:layout="@layout/fragment_question" />
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/summaryFragment"
         android:name="at.ht.feedback.SummaryFragment"
