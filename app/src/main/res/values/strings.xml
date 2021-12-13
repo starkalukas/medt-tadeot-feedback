@@ -20,5 +20,7 @@
     <string name="bt_finish">Beenden</string>
     <string name="tv_thank_you">Danke für Ihr Feedback</string>
     <string name="tv_last_rating">Ihre_letzte_bewertung_war_xxxx</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
