@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import at.ht.feedback.databinding.FragmentNoAnswerBinding
-import at.ht.feedback.databinding.FragmentQuestionBinding
 
 /**
  * A simple [Fragment] subclass.
