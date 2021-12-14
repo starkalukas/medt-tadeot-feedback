@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.adapters.ImageViewBindingAdapter
 import androidx.navigation.findNavController
@@ -34,43 +35,7 @@ class QuestionFragment : Fragment() {
                 view ->
             view.findNavController().navigate(R.id.action_questionFragment_to_noAnswerFragment)
         }
-
-        binding.imageView2.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
-        binding.imageView3.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
-        binding.imageView4.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
-        binding.imageView5.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
-        binding.imageView6.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
-        binding.imageView7.setOnClickListener {
-                view ->
-            view.findNavController().navigate(R.id.action_questionFragment_to_summaryFragment)
-        }
         // Inflate the layout for this fragment
         return binding.root
-    }
-
-    private fun getImageViews(): Array<ImageView> {
-        return arrayOf(
-            imageView2,
-            imageView3,
-            imageView4,
-            imageView5,
-            imageView6,
-            imageView7
-        )
     }
 }
