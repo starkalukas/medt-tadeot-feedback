@@ -36,6 +36,10 @@
         <action
             android:id="@+id/action_summaryFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+        <argument
+            android:name="rating"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/noAnswerFragment"
