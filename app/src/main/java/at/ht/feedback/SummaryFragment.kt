@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.navArgs
 import at.ht.feedback.databinding.FragmentSummaryBinding
 
 /**
@@ -15,6 +16,8 @@ import at.ht.feedback.databinding.FragmentSummaryBinding
  * create an instance of this fragment.
  */
 class SummaryFragment : Fragment() {
+
+    val args: SummaryFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +34,7 @@ class SummaryFragment : Fragment() {
                 view ->
             view.findNavController().navigate(R.id.action_summaryFragment_to_welcomeFragment)
         }
+        binding.tvResult.text = "Ihre letzte Bewertung war: ${args.rating}"
         // Inflate the layout for this fragment
         return binding.root
     }
