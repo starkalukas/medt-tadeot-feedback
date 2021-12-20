@@ -41,8 +41,8 @@
         <action
             android:id="@+id/action_summaryFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
-            app:enterAnim="@anim/move_animation"
-            app:exitAnim="@anim/move_animation" />
+            app:enterAnim="@anim/move_from_top"
+            app:exitAnim="@anim/move_from_top" />
         <argument
             android:name="rating"
             app:argType="integer"
