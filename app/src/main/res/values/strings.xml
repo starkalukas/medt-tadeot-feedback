@@ -23,5 +23,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button">button</string>
     <string name="help_txt">Das ist eine Seite, bei der man sein Feedback zum Tag der offenen Tür abgeben kann.</string>
+    <string name="help_nav">Help</string>
 
 </resources>
